@@ -10,3 +10,119 @@ body {
 }
 
 /* Add styles here! */
+:root {
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary-light: hsl(45deg, 100%, 50%);
+  --color-secondary: hsl(45deg, 100%, 40%);
+  --color-white: hsl(0deg, 0%, 100%);
+  --color-gray-light: hsl(0deg, 0%, 60%);
+  --color-gray-medium: hsl(0deg, 0%, 40%);
+  --color-gray-dark: hsl(0deg, 0%, 30%);
+  --color-gray-very-dark: hsl(0deg, 0%, 10%);
+  --color-gray-black: hsl(0deg, 0%, 0%);
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-7: 96px;
+  --space-8: 128px;
+  --space--1: -8px;
+  --space--2: -16px;
+  --space--3: -24px;
+  --space--4: -32px;
+  --space--5: -48px;
+  --space--6: -64px;
+  --space--7: -96px;
+  --space--8: -128px;
+
+  --text-2xl: 2rem;
+  --text-xl: 1.5rem;
+  --text-lg: 1.25rem;
+  --text-base: 1rem;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-gray-black);
+  margin-bottom: var(--space-1);
+}
+
+h1 {
+  font-size: var(--text-2xl);
+}
+
+h2 {
+  font-size: var(--text-lg);
+}
+
+h3 {
+  font-size: var(--text-lg);
+}
+
+p {
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-2);
+  font-size: var(--text-base);
+  color: var(--color-gray-black);
+  line-height: var(--space-3);
+}
+
+strong {
+  color: var(--color-primary);
+}
+
+header,
+main {
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-5);
+}
+
+main {
+  border-top: var(--space-1) solid var(--color-gray-light);
+  background-color: var(--color-gray-medium);
+}
+
+.max-width-wrapper {
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-chunk {
+  max-width: 40ch;
+  padding: var(--space-3);
+}
+
+.intro-chunk .title {
+  margin-bottom: var(--space-5);
+}
+
+.card {
+  background-color: var(--color-white);
+  padding: var(--space-3);
+  border-bottom: var(--space-1) solid var(--color-gray-light);
+}
+
+.card .indented-heading {
+  padding: var(--space-2) var(--space-3);
+  padding-left: var(--space-4);
+  margin-top: var(--space--2);
+  margin-left: var(--space--4);
+  width: fit-content;
+  background-color: var(--color-secondary-light);
+  border-bottom: var(--space-1) solid var(--color-secondary);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
