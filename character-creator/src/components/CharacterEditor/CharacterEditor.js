@@ -33,14 +33,16 @@ function App() {
       <div className={styles.decoration} aria-hidden="true" />
 
       <div className={styles.characterWrapper}>
-        <Character
-          body={body}
-          head={head}
-          face={face}
-          accessory={accessory}
-          skinColor={skinColor}
-          clothesColor={clothesColor}
-        />
+        <MaxWidthWrapper className={styles.maxWidthWrapper}>
+          <Character
+            body={body}
+            head={head}
+            face={face}
+            accessory={accessory}
+            skinColor={skinColor}
+            clothesColor={clothesColor}
+          />
+        </MaxWidthWrapper>
       </div>
 
       <MaxWidthWrapper className={styles.maxWidthWrapper}>
