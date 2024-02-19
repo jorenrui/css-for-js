@@ -72,7 +72,7 @@ const Base = styled.progress`
 const ProgressBar = ({ value, size }) => {
   return (
     <Base max="100" value={value} size={size}>
-      {value}
+      {value}%
     </Base>
   )
 }
